@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html class = "background">
+<html class = "background" id = "theHTMLfile">
   <head>
     <meta charset="utf-8" />
     <title>Hullo Andrew</title>
@@ -17,12 +17,20 @@
     "\"Do you watch anime?\" - Jack", "\"I feel like robert fucking deniro\" - Nikky", "\"What's up with that guy who made plastic? Not making a way to break it down and shit.\" - Ansel", "\"I'm fucking merked\" - Chewi",
     "\"Firmly grasp it\" - Patrick the star"
   ];
-    var backgroundChoices = [url("http://iliketowastemytime.com/sites/default/files/aerial-landscape-hd-wallpaper.jpg"), url("https://axeetech.com/wp-content/uploads/2014/09/458791.jpg")]
+    var backgroundChoices = ["url('http://iliketowastemytime.com/sites/default/files/aerial-landscape-hd-wallpaper.jpg')", "url('https://axeetech.com/wp-content/uploads/2014/09/458791.jpg')", "url('http://sdeerwallpaper.com/Cool-Wallpapers/4k-nature-wallpapers-1080p-Is-Cool-Wallpapers.jpg')",
+    "url('http://sdeerwallpaper.com/Cool-Wallpapers/4k-nature-wallpaper-high-resolution-Is-Cool-Wallpapers.jpg')", "url('http://www.ultrahdfreewallpapers.com/uploads/large/nature/4k-nature-wallpaper-0050.jpg')",
+    "url('http://icloudpicture.com/wp-content/uploads/2016/05/Amazing-Nature-4K-Wallpapers.jpg')", "url('http://www.pauldingcountyareafoundation.net/static/img/content/ultra-4k-desktop-background-landscape.jpeg')",
+    "url('https://4.bp.blogspot.com/-jMEn-I8L6C4/VdAl1XKG7jI/AAAAAAABxKs/c6h39yLJvPI/s0/Beauty_of_Nature5_uhd.jpg')", "url('http://wallpapercave.com/wp/d0EDz2Y.jpg')",
+    "url('http://i.imgur.com/ykDkyDx.jpg')", "url('http://www.wallpapersbyte.com/wp-content/uploads/2015/08/Annapurna-Range-Nepal-Himalayas-Mountains-Sky-Sunset-Nature-WallpapersByte-com-3840x2400.jpg')",
+    "url('http://imgprix.com/web/wallpapers/awesome-nature-4k-nature-57749172/3840x2160.jpg')", "url('http://imgprix.com/web/wallpapers/awesome-nature-4k-nature-91574982/3840x2160.jpg')"
+
+  ];
     var h;
 
     // The main function of the website
     function main() {
       var name = "Andrew";
+      document.getElementById("theHTMLfile").style.backgroundImage = backgroundChoices[12];
       startTime(name);
       writeQuote();
     }
